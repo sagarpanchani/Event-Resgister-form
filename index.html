@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #_main-div-1 {
+            min-width: 200px;
+            max-width: 800px;
+            min-height: 300px;
+            max-height: 2000px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+
+            background-image: linear-gradient(to right, #447df0 30%, #9a39fc 70%);
+        }
+
+
+        #_main-div {
+
+            min-width: 200px;
+            max-width: 600px;
+            min-height: 400px;
+            max-height: 1200px;
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+
+        h3 {
+            border-radius: 10px 10px 0px 0px;
+            padding: 8px;
+            color: white;
+            background-color: black;
+            display: block;
+            text-align: center;
+        }
+
+        .input {
+            background-color: hsl(0, 0%, 90%);
+            border: none;
+            padding: 7px;
+            border-radius: 3px;
+            margin-left: 20px;
+            margin-top: 30px;
+
+        }
+
+        .input-2 {
+            background-color: hsl(0, 0%, 90%);
+            border: none;
+            padding: 7px;
+            width: 370px;
+            border-radius: 3px;
+            margin-left: 20px;
+            margin-top: 10px;
+
+        }
+
+        .input-3 {
+            background-color: hsl(0, 0%, 90%);
+            border: none;
+            padding: 7px;
+            width: 370px;
+            border-radius: 3px;
+            margin-left: 20px;
+            margin-top: 30px;
+
+        }
+
+        .span-1 {
+            color: gainsboro;
+            font-size: 15px;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .span-2 {
+            color: gainsboro;
+            font-size: 15px;
+            margin-right: 90px;
+
+
+        }
+
+        .span-4 {
+            color: #dcdcdc;
+            font-size: 15px;
+            margin-left: 90px;
+            text-align: center;
+        }
+
+        .span-3 {
+            color: gainsboro;
+            font-size: 15px;
+            margin-right: 163px;
+
+
+        }
+
+        #first-div {
+            display: inline-flex;
+        }
+
+        label {
+            width: 70px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .input-code {
+            background-color: hsl(0, 0%, 90%);
+            border: none;
+            padding: 7px;
+            width: 60px;
+            border-radius: 3px;
+            margin-left: 20px;
+            margin-top: 30px;
+
+        }
+
+        .input-number {
+            background-color: hsl(0, 0%, 90%);
+            border: none;
+            padding: 7px;
+            border-radius: 3px;
+            margin-left: 20px;
+            margin-top: 30px;
+            width: 280px;
+
+        }
+
+        .select-subject {
+            background-color: hsl(0, 0%, 90%);
+            border: none;
+            padding: 7px;
+            width: 390px;
+            border-radius: 3px;
+            margin-left: 20px;
+            margin-top: 20px;
+
+        }
+
+        p {
+            font-weight: bold;
+
+            margin-top: 40px;
+            font-size: 13px;
+        }
+
+        .radio-input {
+            margin-right: 300px;
+
+        }
+
+        button {
+            background-color: #ff4b5a;
+            border: none;
+            padding: 7px;
+            width: 100px;
+            border-radius: 3px;
+            margin-right: 90px;
+            margin-top: 20px;
+            color: white;
+            margin-bottom: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+    <div id="_main-div-1">
+        <div id="_main-div">
+            <div>
+                <h3>EVENT REGISTRATION FORM</h3>
+            </div>
+            <div id="first-div">
+
+                <div id="first-input">
+                    <label for="name">Name</label>
+                    <input class="input" type="username" id="name" name="fname"> <br />
+                    <span class="span-1">First name</span>
+                </div>
+                <div id="second-input">
+                    <input class="input" type="username" id="name" name="lname"> <br />
+                    <span class="span-2">Last name</span>
+                </div>
+
+            </div>
+            <div>
+                <label for="company">company</label>
+                <input type="text" class="input-2" name="company" id="company">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input class="input-3" type="email" id="email" name="email">
+            </div>
+            <div id="first-div">
+                <div id="first-input-1">
+                    <label for="phone">Phone</label>
+                    <input class="input-code" type="number" name="number" id="phone"> <br />
+                    <span class="span-4">Area code</span>
+                </div>
+                <div id="second-input-1">
+                    <input class="input-number" type="number" name="number" id="phone"> <br />
+                    <span class="span-3">phone Number</span>
+                </div>
+            </div>
+            <div>
+                <label for="select">Subject</label>
+                <select name="select" id="select" class="select-subject">
+                    <option value="" checked="checked"></option>
+                    <option value="English">English</option>
+                    <option value="physics">physics</option>
+                    <option value="chemistry">Chemistry</option>
+                </select>
+            </div>
+            <div class="radio-input">
+                <p>Are you an existing customer?</p> <br />
+                <input type="radio" name="yes" id="yes"> <label for="yes">Yes</label>
+                <input type="radio" name="yes" id="No"> <label for="No">No</label>
+                <br /> <button>Register</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</form>
+</body>
+
+</html>
